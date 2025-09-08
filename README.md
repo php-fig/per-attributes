@@ -25,7 +25,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please use the [GitHub security reporting form](https://github.com/php-fig/fp/security) rather than the issue queue.
+If you discover any security related issues, please use the [GitHub security reporting form](https://github.com/php-fig/per-attributes/security) rather than the issue queue.
 
 ## Working Group
 
@@ -35,7 +35,7 @@ If you discover any security related issues, please use the [GitHub security rep
 
 ## License
 
-The Lesser GPL version 3 or later. Please see [License File](LICENSE.md) for more information.
+The MIT License. Please see [License File](LICENSE.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/fig/attributes.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/License-MIT-green.svg?style=flat-square

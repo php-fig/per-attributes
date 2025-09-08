@@ -21,7 +21,6 @@
     }
   },
   "scripts": {
-    "benchmarks": "vendor/bin/phpbench run benchmarks --report=aggregate",
     "test": "vendor/bin/phpunit",
     "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text --coverage-clover=coverage-clover.xml",
     "coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text --coverage-html=\"build/coverage\"",
