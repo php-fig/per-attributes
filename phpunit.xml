@@ -8,9 +8,15 @@
          requireCoverageMetadata="true"
          beStrictAboutCoverageMetadata="true"
          beStrictAboutOutputDuringTests="true"
-         displayDetailsOnPhpunitDeprecations="true"
-         failOnPhpunitDeprecation="true"
          failOnRisky="true"
+         displayDetailsOnTestsThatTriggerErrors="true"
+         displayDetailsOnTestsThatTriggerWarnings="true"
+         displayDetailsOnTestsThatTriggerNotices="true"
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         displayDetailsOnPhpunitDeprecations="false"
+         failOnNotice="true"
+         failOnDeprecation="true"
+         failOnPhpunitDeprecation="false"
          failOnWarning="true">
     <testsuites>
         <testsuite name="default">
@@ -22,6 +28,8 @@
         <ini name="assert.active" value="1"/>
         <ini name="assert.exception" value="1"/>
         <ini name="assert.bail" value="0"/>
+        <ini name="display_errors" value="1"/>
+        <ini name="display_startup_errors" value="1"/>
     </php>
     <source ignoreIndirectDeprecations="true" restrictNotices="true" restrictWarnings="true">
         <include>
