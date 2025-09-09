@@ -18,7 +18,7 @@ jobs:
               with:
                   php-version: ${{ matrix.php }}
                   coverage: xdebug
-            - run: composer install --no-progress ${{ matrix.composer-flags }}
+            - run: composer install --no-progress
             - run: vendor/bin/phpunit ${{ matrix.phpunit-flags }}
     phpstan:
         name: PHPStan checks on ${{ matrix.php }}
@@ -33,7 +33,7 @@ jobs:
               with:
                   php-version: ${{ matrix.php }}
                   coverage: none
-            - run: composer install --no-progress ${{ matrix.composer-flags }}
+            - run: composer install --no-progress
             - run: composer phpstan
     cs:
         name: Code Style checks on ${{ matrix.php }}

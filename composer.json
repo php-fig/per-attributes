@@ -6,7 +6,6 @@
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^v3.87.1",
     "php-cs-fixer/shim": "^3.85",
-    "phpmetrics/phpmetrics": "^2.9",
     "phpstan/phpstan": "^2.1.11",
     "phpunit/phpunit": "^11.1.0"
   },
