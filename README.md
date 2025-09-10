@@ -32,7 +32,7 @@ If you discover any security related issues, please use the [GitHub security rep
 <!-- Add your own name here -->
 - [Larry Garfield][link-crell]
 - [All Contributors][link-contributors]
-
+- [Jaap van Otterdijk][link-jaapio]
 ## License
 
 The MIT License. Please see [License File](LICENSE.md) for more information.
@@ -44,4 +44,5 @@ The MIT License. Please see [License File](LICENSE.md) for more information.
 [link-packagist]: https://packagist.org/packages/fig/attributes
 [link-downloads]: https://packagist.org/packages/fig/attributes
 [link-crell]: https://github.com/Crell
+[link-jaapio]: https://github.com/Jaapio
 [link-contributors]: ../../contributors
