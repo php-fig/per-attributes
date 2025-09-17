@@ -1,0 +1,24 @@
+parameters:
+    level: 10
+    tmpDir: build/phpstan.cache
+    paths:
+        - src
+        - tests
+    ignoreErrors:
+        # PHPStan is overly aggressive on readonly properties.
+        - identifier: property.uninitializedReadonly
+          reportUnmatched: false
+        - identifier:  property.readOnlyAssignNotInConstructor
+          reportUnmatched: false
+
+        # We don't need to be pedantic about iterable types in tests.
+        - identifier:  missingType.iterableValue
+          paths:
+            - tests/*
+          reportUnmatched: false
+
+        # PHPStan doesn't understand PHPUnit's self-termination methods.
+        - identifier: deadCode.unreachable
+          paths:
+            - tests/*
+          reportUnmatched: false
