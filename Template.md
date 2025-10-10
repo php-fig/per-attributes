@@ -1,3 +1,6 @@
+# A template for an attribute definition
+
+```php
 <?php
 
 declare(strict_types=1);
@@ -7,7 +10,7 @@ namespace Fig\Attributes;
 /**
  * One-Line summary of what the attribute does (PLAIN TEXT!)
  *
- * ## Target audience
+ * ## Target audience.
  *
  * Implementors
  * : Who should handle this attribute? Example: "static analysis tools"
@@ -22,7 +25,7 @@ namespace Fig\Attributes;
  * Use citations[^citation] or [Links](https://example.com) in your text to make
  * sure people understand the relevance and where you got your ideas from.
  *
- * ## When should the attribute be applied ?
+ * ## When should the attribute be applied?
  *
  * If your Attribute has preconditions for usage you MUST use the keywords
  * described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
@@ -48,17 +51,20 @@ namespace Fig\Attributes;
 class Template
 {
     /**
-     * You MUST describe parameters to your Attribute extensively! You SHOULD use
-     * the well-known Annotations for that.
-     *
-     * Also, you SHOULD describe what the different functions do.
-     *
+     * Describe your methods extensively.
+     * 
+     * You also MUST describe parameters to your Attribute extensively! You 
+     * SHOULD use the DocBlock-format as described in PSR-5 for that.
+     * 
      * @param string $name
-     *     The name of this template
+     *     The name of this template.
+     * 
+     *     Parameter descriptions can span multiple lines. Make sure to
+     *     separate the subject from the text by a blank line.
      * @param boolean $expose
      *     Whether to expose this as an example or not.
      * @param int[] $luckyNumbers
-     *     The lucky numbers of this week
+     *     The lucky numbers of this week.
      */
     public function __construct(
         public readonly string $name,
@@ -66,3 +72,4 @@ class Template
         public readonly array $luckyNumbers
     ) {}
 }
+```
