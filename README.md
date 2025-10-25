@@ -19,6 +19,9 @@ Any attribute proposed must be approved by a majority of the working group, and 
 
 Ideally, proposals should be discussed in the [PHP-FIG Discord](https://discord.gg/php-fig), `#per-attributes` channel, prior to proposal.
 
+Existing attributes can be transfered to the FIG. Such attributes will be listed for a reasonable amount of time
+in an IN_TRANSITION.md document. The process for a take-over is in essence the same as for not-yet existing attributes.
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
