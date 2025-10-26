@@ -32,12 +32,12 @@ namespace Fig\Attributes;
  *
  * 1. MUST NOT use or modify any global variable.
  * 2. MIST NOT perform any IO operations, even read-only ones.
- * 3. MUST NOT modify any property of an object provided to it as an 
+ * 3. MUST NOT modify any property of an object provided to it as an
  *    argument, even transitively.
- * 4. MUST NOT read from an object property on the same object unless 
+ * 4. MUST NOT read from an object property on the same object unless
  *    that property is `readonly`.
  * 5. MUST NOT accept a parameter by reference.
- * 6. MUST NOT call any function that is not also marked "pure." (It 
+ * 6. MUST NOT call any function that is not also marked "pure." (It
  *    may invoke a callable passed to it as an explicit argument.)
  *
  * ## When should the attribute be applied
@@ -49,21 +49,19 @@ namespace Fig\Attributes;
  *  implementations of that method MUST themselves be marked pure.
  *
  * Static analysis tools
- * - SHOULD verify that the function indeed meets the rules above, 
+ * - SHOULD verify that the function indeed meets the rules above,
  *   and treat it as an error if not.
- *
- * Static analysis tools
- * - MUST treat PHP standard library functions that conform to these 
+ * - MUST treat PHP standard library functions that conform to these
  *   rules as pure. As an example, `strtolower()` is pure.  `sort()`
  *   is not.
- * - MUST flag as an error any function that is marked pure but is 
+ * - MUST flag as an error any function that is marked pure but is
  *   demonstrably not.
  * - MUST treat any method implementing an interface method marked
  *   pure as pure.
  *
  * Optimization tools and pre-compilation tools:
- * - MAY implement optimizations based on the knowledge that a function 
- *   is pure. For example, they may safely cache its results indefinitely, 
+ * - MAY implement optimizations based on the knowledge that a function
+ *   is pure. For example, they may safely cache its results indefinitely,
  *   or inline its code into another routine.
  *
  */
